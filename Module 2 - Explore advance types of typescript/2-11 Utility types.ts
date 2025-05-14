@@ -49,3 +49,46 @@
 
   //
 }
+{
+  type Person={
+    name: string;
+    age: number;
+    email?: string;
+    contactNo: string;
+  }
+
+  type NameAge = Pick<Person, "name" | "age">
+
+  type ContactInfo = Omit<Person, "name"| "age">
+
+  type PersonRequired = Required<Person>
+
+  type PersonPartial= Partial<Person>
+
+  type PersonReadonly = Readonly<Person>
+
+  const person1 : PersonReadonly={
+    name: "Mr, xy",
+    age: 200,
+    contactNo: "33"
+  }
+  person1.name = "Alamin"
+  // omit 
+
+  // record 
+  // type MyObj = {
+  //   a: string,
+  //   b: string
+  // }
+
+  type MyObj = Record<string, string>
+
+  const obj1 : MyObj={
+    a: "a",
+    b: "bb",
+    c: "cc",
+
+  }
+
+  const EmptyObj : Record<string, unknown> ={}
+}

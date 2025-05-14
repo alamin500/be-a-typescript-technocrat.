@@ -12,9 +12,12 @@
   // const boolArray: boolean[] = [true, false, true];
   const boolArray: GenericArray<boolean> = [true, false, true];
 
+// ------------------------------------------------------------------------------------
+
   interface User {
     name: string;
     age: number;
+    role?: number;
   }
 
   const user: GenericArray<User> = [
@@ -27,6 +30,9 @@
       age: 110,
     },
   ];
+
+
+  // ---------------------------------------------------------------------------------------------
 
   const add = (x: number, y: number) => x + y;
 

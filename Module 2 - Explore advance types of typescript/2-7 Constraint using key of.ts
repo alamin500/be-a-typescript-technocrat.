@@ -24,7 +24,7 @@
     year: 200,
   };
 
-  const result1 = getPropertyValue(car, "sjs");
+  const result1 = getPropertyValue(user, "model");
 
   // obj[key]   26
 

@@ -11,17 +11,17 @@
       this._balance = balance;
     }
 
-   public  addDeposit(amount: number) {
+    public addDeposit(amount: number) {
       this._balance = this._balance + amount;
     }
 
-   public getBalance() {
+    public getBalance() {
       return this._balance;
     }
   }
 
-  class StudentAccount extends BankAccount{
-    test(){
+  class StudentAccount extends BankAccount {
+    test() {
       this.
     }
   }
@@ -34,3 +34,4 @@
 
   //
 }
+
